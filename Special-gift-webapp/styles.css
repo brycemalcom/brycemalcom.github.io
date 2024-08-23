@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.gift-container {
+    text-align: center;
+}
+
+#present {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#present:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+.message-container {
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+.gift-image {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gift-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FF1493;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.gift-text {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
